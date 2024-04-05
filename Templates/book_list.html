@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style05.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK WORLD</title>
+    <style>
+        table,
+        th,
+        td {
+            border: .5px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h4 class="time" >{{ time }}</h4>
+    <div class="tablediv">
+        <!-- <h3 style="color: rgb(22, 29, 29);">{{time}}</h3> -->
+
+        <table cellspacing="25" cellpadding="10">
+            {% if books %}
+            <caption>
+                <h1>Welcome to book world</h1>
+            </caption>
+
+            <tr>
+                <!-- <td class="tablehead">id</td> -->
+                <th class="tablehead">BOOKNAME</th>
+                <th class="tablehead">BOOKDESCRIPTION</th>
+                <th class="tablehead">BOOK AUTHOR</th>
+                <th class="tablehead">BOOK PRICE</th>
+                <th class="tablehead" colspan="2">ACTION</th>
+
+            </tr>
+            <tr class="tableitems">
+                {% for book in books %}
+                <!-- <td class="secondrow">{{ book.id }}</td> -->
+                <td class="secondrow">{{ book.bookname }}</td>
+                <td class="secondrow">{{ book.bookdescription }}</td>
+                <td class="secondrow">{{ book.bookauthor }}</td>
+                <td class="secondrow">{{ book.bookprice }}</td>
+                
+                <!-- <td class="secondrow">
+                    {% if book.available %}
+                    YES
+                    {% else %}
+                    NO
+                    {% endif %}
+                </td> -->
+                <!-- {% if book.available %}
+                <p>Yes</p>
+                {% else %}
+                <p>No</p>
+                {% endif %}
+            </td>-->
+                <!-- <tr> -->
+                <!-- <td class="secondrow" >{{ count }}</td></tr> -->
+                <td class="secondrow"><b> <a class="edit" href="{% url 'update_book' book.id %}"> Edit</a> </b></td>
+                <td class="secondrow"> <b> <a class="delete" href="{% url 'delete_book' book.id %}"> delete</a> </b>
+                </td>
+
+            </tr>
+
+            {% endfor %}
+            {% endif %}
+        </table>
+        <h3 class="count-boook">Total Book: <span class="count"> {{ count }} </span> </h3>
+    </div>
+    <br>
+    </ul>
+
+    <b> <a class="create" href="{% url 'create_book' %}">Create Items</a> </b>
+
+
+
+    <div class="container">
+        <div class="flower1"></div>
+        <div class="flower2"></div>
+        <div class="flower3"></div>
+        <div class="flower4"></div>
+        <div class="flower5"></div>
+        <div class="flower6"></div>
+        <div class="flower7"></div>
+        </div>
+</body>
+
+</html>

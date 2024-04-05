@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style06.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD ITEMS</title>
+</head>
+<body>
+    <div class="listdiv">
+    <h1> Create Task</h1>
+    <form method="post" action="">
+        {% csrf_token %}
+    <table>
+        <tr>
+            <td><label for=""> <h2>Book Name </h2> </label> </td>
+               <td> <input type="text" name="bookname"> </td>
+        </tr>
+        <tr>
+            <td><label for=""> <h2> Book Description </h2> </label></td>
+                <!-- <input type="text" name="description"> -->
+               <td> <textarea name="bookdescription" id="" cols="30" rows="1"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for=""> <h2> Book Price </h2> </label></td>
+               <td><input type="number" name="bookprice"> <br></td>
+        </tr>
+        <br>
+        <br>
+
+        <tr>
+            <td><label for=""> <h2> Author Name </h2> </label> </td>
+               <!-- <td> <input type="checkbox" name="Available"> <br></td> -->
+               <td> <input type="text" name="bookauthor"   > <br></td>
+               <!-- <td> <select>
+                <option value="0">Is Available:</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+                </select>
+            </td> -->
+        </tr>
+        <!-- <img src="bookw01.jpg" alt=""> -->
+    </table>
+    <br>
+    
+        
+        
+        
+        
+        <button class="button" type="submit"> Submit</button>
+    </form>
+</div>
+</body>
+</html>

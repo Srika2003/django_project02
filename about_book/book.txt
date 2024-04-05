@@ -1,0 +1,27 @@
+1) 	TITLE:The Hunger Games
+	AUTHOR NAME:Suzanne Collins
+	description:Dystopian Survival.
+
+2)	TITLE:Harry Potter 
+	AUTHOR NAME:J.K. Rowling Mary GrandPré
+	description:Harry Potter is about to start his fifth year at Hogwarts School of Witchcraft and Wizardry.
+
+3)	TITLE:Pride and Prejudice
+	AUTHOR NAME:Jane Austen,Anna Quindlen
+	description:Since its immediate success in 1813, Pride and Prejudice has remained one of the most popular novels in the English language. 
+
+4)	TITLE:The Book Thief
+	AUTHOR NAME:Markus Zusak
+	description:The country is holding its breath
+
+5)	TITLE:"1984"
+	AUTHOR NAME:George Orwell
+	description:
+
+6)	TITLE:Gone Girl
+	AUTHOR NAME:Gillian Flynn
+	description:Twisted Mystery.
+
+7)	TITLE:The Martian 
+	AUTHOR NAME:Andy Weir
+	description:Sci-Fi Survival.

@@ -1,0 +1,307 @@
+body{
+    background-color: rgb(166, 241, 241);
+    text-align: center;
+    background-image: url(home01.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(11, 3, 128);
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    color: rgb(10, 104, 63);
+}
+.button1{
+    background-color: rgb(250, 69, 69);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: medium;
+    cursor: pointer;
+    box-shadow: 1px 2px  15px    rgb(251, 250, 250);
+}
+.button2{
+    background-color: rgb(146, 248, 146);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: medium;
+    cursor: pointer;
+    box-shadow: 10p 20px black;
+    box-shadow: 3px 3px  15px    rgb(251, 250, 250);
+}
+.button2:hover{
+    background-color: rgb(49, 149, 29);
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    transition: 0.3s;
+    
+}
+.button1:hover{
+    background-color: rgb(252, 36, 36);
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    transition: 0.3s;
+}
+h5{
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+    margin-right: 1300px;
+}
+/* .animation1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration:10s ;
+    border-radius: 100%;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+}
+@keyframes example{
+    0% {background-color: #fb0707; left: 0px; top: 0px;}
+    25% {background-color: rgb(251, 247, 5); left: 400px; top: -370px;}
+    50% {background-color: #1df904; left: 700px; top: 270px;}
+    75% {background-color: rgb(4, 190, 246); left: 1200px; top: -370px;}
+    100% {background-color: rgb(28, 3, 251); left: 1500px; top: 270px;}
+}
+.animation2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example1;
+    animation-duration:10s ;
+    border-radius: 100%;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+}
+@keyframes example1{
+    0% {background-color: rgb(28, 3, 251); left: 1500px; top: 270px;}
+    25% {background-color:rgb(4, 190, 246); left: 1200px; top: -370px;}
+    50% {background-color: #1df904; left: 700px; top: 270px;}
+    75% {background-color: rgb(242, 246, 4); left: 400px; top: -370px;}
+    100% {background-color: rgb(251, 3, 3); left: 0px; top: 0px;}
+    
+} */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black ;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.flower1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* border: 2px solid red; */
+    /* background-image: url('flower.jpg'); 
+    background-size: contain; */
+    animation: fall 8s infinite linear;
+}
+.flower2 {
+    position: absolute;
+    left: 100px;
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid red; */
+    background-image: url('book2.avif'); 
+    background-size: contain;
+    animation: fall2 8s  linear;
+}
+.flower3 {
+    position: absolute;
+    left: 200px;
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid red; */
+    background-image: url('book1.avif'); 
+    background-size: contain;
+    animation: fall3 8s  linear;
+}
+.flower4 {
+    position: absolute;
+    left: 300px;
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid red; */
+    background-image: url('book2.avif'); 
+    background-size: contain;
+    animation: fall4 8s  linear;
+}
+.flower5 {
+    position: absolute;
+    left: 400px;
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid red; */
+    background-image: url('flower.jpg'); 
+    background-size: contain;
+    animation: fall5 8s  linear;
+}
+.flower6 {
+    position: absolute;
+    left: 500px;
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid red; */
+    background-image: url('flower.jpg'); 
+    background-size: contain;
+    animation: fall6 8s  linear;
+}
+.flower7 {
+    position: absolute;
+    left: 600px;
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid red; */
+    background-image: url('flower.jpg'); 
+    background-size: contain;
+    animation: fall7 8s  linear;
+}
+
+@keyframes fall {
+    0% {
+        top: 0px;
+    }
+    25%{
+        top: 250px;
+    }
+    50%{
+        top: 500px;
+    }
+    75%{
+        top: 750px;
+    }
+    100% {
+        top: 1000px;
+    }
+}
+@keyframes fall2 {
+    0% {
+        top: -250px;
+    }
+    25%{
+        top: 0px;
+    }
+    50%{
+        top: 250px;
+    }
+    75%{
+        top: 500px;
+    }
+    100% {
+        top: 1000px;
+    }
+}
+@keyframes fall3 {
+    0% {
+        top: -100px;
+    }
+    25%{
+        top: 150px;
+    }
+    50%{
+        top: 350px;
+    }
+    75%{
+        top: 650px;
+    }
+    100% {
+        top: 1000px;
+    }
+}
+@keyframes fall4 {
+    0% {
+        top: 50px;
+    }
+    25%{
+        top: 200px;
+    }
+    50%{
+        top: 400px;
+    }
+    75%{
+        top: 600px;
+    }
+    100% {
+        top: 1000px;
+    }
+}
+@keyframes fall5 {
+    0% {
+        top: 0px;
+    }
+    25%{
+        top: 250px;
+    }
+    50%{
+        top: 500px;
+    }
+    75%{
+        top: 750px;
+    }
+    100% {
+        top: 1000px;
+    } 
+}
+@keyframes fall6 {
+    0% {
+        top: -100px;
+    }
+    25%{
+        top: 150px;
+    }
+    50%{
+        top: 350px;
+    }
+    75%{
+        top: 650px;
+    }
+    100% {
+        top: 1000px;
+    }
+}
+@keyframes fall7 {
+    0% {
+        top: -250px;
+    }
+    25%{
+        top: 0px;
+    }
+    50%{
+        top: 250px;
+    }
+    75%{
+        top: 500px;
+    }
+    100% {
+        top: 1000px;
+    }
+}
+

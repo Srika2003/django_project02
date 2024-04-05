@@ -1,0 +1,53 @@
+body {
+    background-image: url(login04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+div{
+    /* background-color: rgb(99, 99, 95); */
+    backdrop-filter: blur(5px);
+    height: 300px;
+    width: 420px;
+    border: 1px solid rgb(7, 3, 3);
+    border-radius: 10px;
+    box-shadow: 1px 2px 15px rgb(251, 250, 250);
+    padding: 20px;
+    margin-top: 130px;
+    margin-left: 50px;
+}
+h1{
+    color: aqua;
+    font-weight: bolder;
+    font-size: 40px;
+    font-style: italic;
+    padding-bottom: 40px;
+
+}
+form{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: normal;
+    padding-left: 30px;
+    color: white;
+    
+}
+.btn{
+    background-color: transparent;
+    color:white;
+    box-shadow: 1px 2px 15px rgb(251, 250, 250);
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    
+
+}
+.btn:hover{
+    padding: 12px 23px;
+    transition: .3s;
+}
